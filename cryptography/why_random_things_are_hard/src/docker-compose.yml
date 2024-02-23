@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  many-random:
+    build:
+      context: . 
+      dockerfile: Dockerfile 
+    ports: 
+    - "10042:1337"
