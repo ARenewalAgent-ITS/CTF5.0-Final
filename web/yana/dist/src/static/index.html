@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YANA</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center font-mono">
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <h1 class="text-xl font-semibold mb-4 text-center">Yet Another Note Taking App</h1>
+        <div class="mb-4">
+            <textarea id="note" class="mt-1 p-2 w-full border rounded-md" rows="4" placeholder="Type your note here..."></textarea>
+        </div>
+        
+        <button id="submit" type="button" class="bg-lime-300 text-sm px-4 py-2 rounded-md hover:bg-lime-500">Save Note</button>
+        <div class="mt-8">
+            <div class="grid grid-cols-6 py-2 gap-1 items-center">
+                <h2 class="text-lg font-semibold col-span-4">Your Notes</h2>
+                <button id="reset" class="p-2 bg-red-500 text-xs rounded-md hover:bg-red-700">Reset</button>
+                <button id="export" class="p-2 bg-blue-500 text-xs rounded-md hover:bg-blue-700">Export</button>
+            </div>
+            <ul id="notes-list">
+            </ul>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.8/purify.min.js"></script>
+    </div>
+    <script src="/script.js"></script>
+    <style>
+        @import 'style.css';
+    </style>
+</body>
+</html>
