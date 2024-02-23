@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepeW</title>
+</head>
+<body>
+    <h1>PepeW</h1>
+    <form id="textForm">
+        <label for="gocode">Code:</label>
+        <br/>
+        <textarea name="gocode" id="gocode" style="height: 200px; width: 1100px;"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const textForm = document.getElementById('textForm');
+            const outputDiv = document.getElementById('output');
+
+            textForm.addEventListener('submit',  function  (event) {
+                event.preventDefault();
+
+                console.log('Form submitted');
+
+                const formData = new FormData(textForm);
+                const text = formData.get('gocode');
+
+                fetch('http://localhost:3000/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    outputDiv.innerHTML = `<span style="white-space: pre;">${data.output}</span>`;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
