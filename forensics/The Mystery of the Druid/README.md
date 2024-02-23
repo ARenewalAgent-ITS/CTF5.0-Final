@@ -28,7 +28,9 @@ Medium
 android forensics, OSINT
 
 ## Notes
-File: https://drive.google.com/file/d/1tvVDWIQ0KA1-pKhkYAeRAXZs9F0Tu-VY/view?usp=drive_link
+Jika file di-host di cloud, usahakan untuk membagikannya sebelum CTF dimulai. File telah dipassword dengan pass tertera di `passarchive.txt`
+
+File: https://drive.google.com/file/d/1xRfgt3UNFcXJNOGULBTR5UEoiBjZ8_WH/view?usp=drive_link
 
 ## Solution
 

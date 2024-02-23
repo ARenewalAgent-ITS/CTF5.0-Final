@@ -25,8 +25,7 @@ memory forensics, windows forensics
 ## Notes
 Jika file di-host di cloud, usahakan untuk membagikannya sebelum CTF dimulai. File telah dipassword dengan pass tertera di `passarchive.txt`
 
-File: https://drive.google.com/file/d/1Qjw0JSgoKKixN3_LB-Euugnt96eCFs2K/view?usp=drive_link
-
+File: https://drive.google.com/file/d/1PKW3ZmbytgRgqaLb_AM1M4ZQWxoUqBSy/view?usp=drive_link
 ## Solution
 1. Apa nama email dari pengirim yang mengirimkan malware tersebut?
 (Format: email@domain.tld)
